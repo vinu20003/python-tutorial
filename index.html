@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tut_css.css">
+    <title>Your Website Title</title>
+    <h1>Python tutorials</h1>
+</head>
+<body style="height: 100%; margin: 0;">
+    <div class="container" style="display: flex; height: 100%;">
+        <div class="left">
+            <ul class="menu">
+                <li><a href="#content1">Python Variables</a></li>
+                <li><a href="#content2">Python Data types</a></li>
+                <li><a href="#content3">Python Operators</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <h2 id="content1">  </h2>
+            <h1>Python Variables in Detail</h1>
+
+    <p>
+        Variables in Python are used to store and manipulate data. They are dynamically typed, meaning you don't need to explicitly declare the type of a variable. The interpreter infers the type based on the value assigned to the variable.
+    </p>
+
+    <h2>Variable Assignment:</h2>
+
+    <p>
+        You can assign values to variables using the assignment operator (<code>=</code>). For example:
+    </p>
+
+    <pre>
+        <code>
+name = "John"
+age = 25
+is_student = True
+        </code>
+    </pre>
+
+    <h2>Variable Naming Rules:</h2>
+
+    <p>
+        Variable names can contain letters, numbers, and underscores. They cannot start with a number. Python is case-sensitive, so <code>age</code> and <code>Age</code> are different variables.
+    </p>
+
+    <h2>Data Types:</h2>
+
+    <p>
+        Python has various built-in data types that variables can hold. Common ones include:
+    </p>
+
+    <pre>
+        <code>
+# Integer type
+age = 25
+
+# Floating-point type
+height = 5.9
+
+# String type
+name = "John"
+
+# Boolean type
+is_student = True
+        </code>
+    </pre>
+
+    <h2>Dynamic Typing:</h2>
+
+    <p>
+        Python allows dynamic typing, meaning you can reassign a variable to a different type. For example:
+    </p>
+
+    <pre>
+        <code>
+x = 5
+print(x)  # Outputs: 5
+
+x = "Hello"
+print(x)  # Outputs: Hello
+        </code>
+    </pre>
+
+    <h2>Variable Scope:</h2>
+
+    <p>
+        The scope of a variable determines where it can be accessed. Variables declared inside a function have local scope, while those declared outside functions have global scope. For example:
+    </p>
+
+    <pre>
+        <code>
+global_var = "I am global"  # Global variable
+
+def my_function():
+    local_var = "I am local"  # Local variable
+    print(global_var)  # Accessing global variable
+    print(local_var)   # Accessing local variable
+
+my_function()
+        </code>
+    </pre>
+
+            <h2 id="content2">  </h2>
+            <h1 class="dt">Python Data Types in Detail</h1>
+
+            <h2>int:</h2>
+        
+            <p>
+                The <code>int</code> data type is used to represent integers (whole numbers) in Python.
+            </p>
+        
+            <pre>
+                <code>
+        age = 25
+        count = -10
+                </code>
+            </pre>
+        
+            <h2>float:</h2>
+        
+            <p>
+                The <code>float</code> data type is used to represent floating-point numbers (decimal numbers) in Python.
+            </p>
+        
+            <pre>
+                <code>
+        height = 5.9
+        pi = 3.14159
+                </code>
+            </pre>
+        
+            <h2>str:</h2>
+        
+            <p>
+                The <code>str</code> data type is used to represent strings (sequences of characters) in Python.
+            </p>
+        
+            <pre>
+                <code>
+        name = "John"
+        message = 'Hello, Python!'
+                </code>
+            </pre>
+        
+            <h2>bool:</h2>
+        
+            <p>
+                The <code>bool</code> data type is used to represent boolean values (True or False) in Python.
+            </p>
+        
+            <pre>
+                <code>
+        is_student = True
+        is_adult = False
+                </code>
+            </pre>
+        
+            <h2>list:</h2>
+        
+            <p>
+                The <code>list</code> data type is used to represent ordered, mutable sequences of elements in Python.
+            </p>
+        
+            <pre>
+                <code>
+        numbers = [1, 2, 3, 4, 5]
+        names = ["Alice", "Bob", "Charlie"]
+                </code>
+            </pre>
+        
+            <h2>tuple:</h2>
+        
+            <p>
+                The <code>tuple</code> data type is used to represent ordered, immutable sequences of elements in Python.
+            </p>
+        
+            <pre>
+                <code>
+        coordinates = (3, 4)
+        colors = ("red", "green", "blue")
+                </code>
+            </pre>
+        
+            <h2>set:</h2>
+        
+            <p>
+                The <code>set</code> data type is used to represent unordered, mutable collections of unique elements in Python.
+            </p>
+        
+            <pre>
+                <code>
+        unique_numbers = {1, 2, 3, 4, 5}
+        unique_colors = {"red", "green", "blue"}
+                </code>
+            </pre>
+        
+            <h2>dict:</h2>
+        
+            <p>
+                The <code>dict</code> data type is used to represent key-value pairs (associative arrays) in Python.
+            </p>
+        
+            <pre>
+                <code>
+        person = {"name": "John", "age": 25, "occupation": "Developer"}
+        student_grades = {"math": 90, "english": 85, "science": 92}
+                </code>
+            </pre>
+            <h2 id="content3"> </h2>
+            <h1>Python Operators in Detail</h1>
+
+    <h2>Arithmetic Operators:</h2>
+
+    <p>
+        Arithmetic operators are used to perform mathematical operations in Python.
+    </p>
+
+    <pre>
+        <code>
+# Addition
+result = 5 + 3
+
+# Subtraction
+difference = 10 - 7
+
+# Multiplication
+product = 4 * 6
+
+# Division
+quotient = 15 / 3
+
+# Modulus (remainder)
+remainder = 17 % 5
+
+# Exponentiation
+power = 2 ** 3
+        </code>
+    </pre>
+
+    <h2>Comparison Operators:</h2>
+
+    <p>
+        Comparison operators are used to compare values in Python, resulting in a boolean value (True or False).
+    </p>
+
+    <pre>
+        <code>
+# Equal to
+is_equal = 10 == 5
+
+# Not equal to
+not_equal = 8 != 8
+
+# Greater than
+greater_than = 15 > 10
+
+# Less than
+less_than = 20 < 25
+
+# Greater than or equal to
+greater_equal = 12 >= 12
+
+# Less than or equal to
+less_equal = 30 <= 35
+        </code>
+    </pre>
+
+    <h2>Logical Operators:</h2>
+
+    <p>
+        Logical operators are used to combine or manipulate boolean values.
+    </p>
+
+    <pre>
+        <code>
+# AND
+logical_and = True and False
+
+# OR
+logical_or = True or False
+
+# NOT
+logical_not = not True
+        </code>
+    </pre>
+
+    <h2>Assignment Operators:</h2>
+
+    <p>
+        Assignment operators are used to assign values to variables.
+    </p>
+
+    <pre>
+        <code>
+# Assign value
+x = 10
+
+# Add and assign
+x += 5  # Equivalent to x = x + 5
+
+# Subtract and assign
+y -= 3  # Equivalent to y = y - 3
+
+# Multiply and assign
+z *= 2  # Equivalent to z = z * 2
+
+# Divide and assign
+w /= 4  # Equivalent to w = w / 4
+        </code>
+    </pre>
+        </div>
+    </div>
+</body>
+</html>
